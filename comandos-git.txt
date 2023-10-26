@@ -9,3 +9,32 @@ git branch -M main
 git remote add origin git@github.com:C4rlosPS/git-test.git // este comando associa o projeto vazio no git hub coim seu projeto no vsc
 
 git push -u origin main ele manda o seu repositorio local para o repositorio remoto no github
+
+Para criar uma nova branch no Git, você pode usar o comando git checkout -b seguido pelo nome da nova branch que deseja criaR:
+
+git checkout -b nome-da-nova-branch
+
+Se você deseja criar uma nova branch, mas não deseja mudar para ela imediatamente, você pode usar o comando git branch com o nome da nova branch, e depois usar git checkout para mudar para a nova branch. Aqui está como fazer isso:
+
+git branch nome-da-nova-branch
+git checkout nome-da-nova-branch
+
+Para mesclar as alterações de uma branch em outra
+Suponhamos que você tenha trabalhado em uma branch chamada "minha-nova-branch" e deseje mesclar suas alterações no ramo principal (por exemplo, "main" ou "master").
+
+Primeiro, certifique-se de estar na branch de destino (geralmente, o ramo principal). Use o comando git checkout para mudar para a branch de destino, se ainda não estiver nela. Por exemplo, para mudar para o ramo "main", você pode fazer:
+
+git checkout main // muda para branch main
+
+
+Em seguida, use o comando git merge para mesclar as alterações da sua branch atual (no exemplo, "minha-nova-branch") na branch de destino (no exemplo, "main"). O comando seria o seguinte:
+
+git merge minha-nova-branch
+
+Após resolver quaisquer conflitos e fazer as alterações necessárias, você pode confirmar a mesclagem usando o comando git commit. O Git geralmente fornecerá uma mensagem de confirmação padrão, que você pode editar conforme necessário.
+
+git commit -m "Merged minha-nova-branch"
+
+Finalmente, você pode usar o comando git push para enviar as alterações mescladas para o repositório remoto, caso deseje atualizar o repositório remoto com as alterações mescladas.
+
+git push origin main
