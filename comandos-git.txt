@@ -1,0 +1,11 @@
+ls - ve o que tem na pasta
+
+git init - inicializa um projeto git com aquela pasta
+
+git commit -m " explicações " - para fazer um commit e salvar as alterações
+
+git branch -M main   
+
+git remote add origin git@github.com:C4rlosPS/git-test.git // este comando associa o projeto vazio no git hub coim seu projeto no vsc
+
+git push -u origin main ele manda o seu repositorio local para o repositorio remoto no github
